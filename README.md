@@ -18,7 +18,7 @@ A simple guide for starting [DOMjudge](http://domjudge.org) using some helper Ba
 
 ## Start workers
 
-Suppose there is a working server on some machine. Even the worker and the server are on the same machine or not, you should start a server beside the worker.
+Suppose there is a working server on a machine. It doesn't matter the worker and the server are on the same machine or not; you should start a server beside the worker.
 
 1. ```./config_user_and_grub.sh```
 2. Restart your computer.
@@ -28,7 +28,7 @@ Suppose there is a working server on some machine. Even the worker and the serve
 6. ```./start_server.sh```
 7. Modify *SERVER_URL* and *WORKER_PASSWORD* variables in *start_server.sh* file. The first one should be set to the URL of DOMjudge server, but the second one can have an arbitrary value.
 8. ```./start_woker.sh 0```
-9. Now, a single worker (with ID 0) is up. You can start more concurrent workers on the same machine. The maximum number of workers you can have equals the number of your machine CPU cores. For the next workers, just use ```./start_woker.sh 1```, ```./start_woker.sh 2``` and so on.
+9. Now, a single worker (with ID 0) is up. You can start more concurrent workers on the same machine. For the next workers, just use ```./start_woker.sh 1```, ```./start_woker.sh 2``` and so on. The maximum number of workers equals the number of your machine CPU cores.
 
 ## See also
 
