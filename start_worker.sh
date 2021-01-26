@@ -1,5 +1,6 @@
 #!/bin/bash
 
+DOMJUDGE_VERSION=7.1.0
 WORKER_ID=$1 #number (id) of judgehost
 SERVER_URL="http://domserver/" #domserver url
 WORKER_PASSWORD=worker_password #judgehost user account password in the server 

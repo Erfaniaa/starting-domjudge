@@ -1,11 +1,11 @@
 #!/bin/bash
 
+export DOMJUDGE_VERSION=7.1.0
+MARIADB_VERSION=latest
+
 sudo apt update
 
 sudo apt install -y docker.io
-
-MARIADB_VERSION=latest
-export DOMJUDGE_VERSION=7.1.0
 
 sudo docker pull mariadb:$MARIADB_VERSION
 sudo docker pull domjudge/domserver:$DOMJUDGE_VERSION
