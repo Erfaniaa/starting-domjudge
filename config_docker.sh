@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export DOMJUDGE_VERSION=7.1.0
+export DOMJUDGE_VERSION=8.2.0
 MARIADB_VERSION=latest
 
 sudo apt update
